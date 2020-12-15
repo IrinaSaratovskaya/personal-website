@@ -304,8 +304,8 @@ function App() {
                                                                     <div className="skills_row">
                                                                         <span className="caption">React.js</span>
                                                                         <span className="progressbar">
-                                                                            <span className="prog yellow" style={{width: '80%'}}>
-                                                                                <span className="value">80%</span>
+                                                                            <span className="prog yellow" style={{width: '85%'}}>
+                                                                                <span className="value">85%</span>
                                                                             </span>
                                                                         </span>
                                                                     </div>
