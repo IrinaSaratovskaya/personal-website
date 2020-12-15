@@ -230,8 +230,12 @@
 		margin-bottom: 30px;
 	}
 
-	.resume_sidebar .widget:first-child {
-		margin-top: 55px;
+	.resume_sidebar .widget {
+		margin-top: 52px;
+
+		&:first-child {
+		 margin-top: 55px;
+		}	
 	}
 
 	.widget_inner.style_3 {
@@ -366,6 +370,14 @@
 			margin-left: 2px!important;
 		}
  	}
+
+	 .resume_sidebar .widget {
+		margin-top: 52px;
+
+		&:first-child {
+		 margin-top: 55px;
+		}	
+	}
 
  	.portfolio_items article:hover h5 {
    		bottom: 123px;

@@ -299,6 +299,9 @@ input[type="password"],
     }
 }
 
+.profile_text {
+    padding-bottom: 10px;
+}
 
 #resume { 
     position: relative;
@@ -760,20 +763,27 @@ section#profile {
             color: #9b9b9b;
 
             .period_present { 
-                font-size: 14px;
+                color: #646464;
+                font-weight: 700;
             }
         }
 
         .post_subtitle { 
             margin-top: 5px; 
-            font-weight: 900;
+            font-weight: 400;
             font-size: 14px; 
             line-height: 18px; 
-            color: #9b9b9b; 
+            color: #4ca5d0; 
             padding-left: 23px; 
             text-transform: capitalize; 
             margin-bottom: 0;
+
+            &.ed_subtitle {
+                color: #878787;
+                font-weight: 700; 
+            }
         }
+        
     }
      
 
@@ -1349,7 +1359,7 @@ article {
 }
 
 .resume_sidebar .widget { 
-    margin-top: 55px;
+    margin-top: 54px;
 
     &:first-child { 
         margin-top: 0;
@@ -1495,7 +1505,7 @@ article {
         .caption { 
             float: left; 
             font-weight: 700; 
-            margin-right: 5px; 
+            margin-right: 6px; 
             overflow: hidden; 
             padding-top: 1px; 
             width: 60px;

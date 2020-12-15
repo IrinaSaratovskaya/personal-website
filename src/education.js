@@ -9,7 +9,7 @@ export const education = [
         "years": "08/2019 - current",
         "institution": "Front End Development",
         "subject": "Self-Education & Professional Mentoring",
-        "description": "", 
+        "description": "Online courses (400+ hours) and practice under the mentoring of a Senior Developer from Silicon Valley.", 
     },
     {
         "years": "10/2010",

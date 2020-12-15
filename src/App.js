@@ -121,14 +121,14 @@ function App() {
 												<div className="row">
 													<div className="col-10 offset-1 col-sm-8 offset-sm-2 col-md-3 offset-md-0 col-lg-2 profile_img">
 														<div id="profile_photo">
-															<img src={'/images/profile_pic2.jpg'} alt="Irina Saratovskaya" />
+															<img src={'/images/profile_pic4.jpg'} alt="Irina Saratovskaya" />
 														</div>
 													</div>
 													<div className="col-10 offset-1 col-sm-8 offset-sm-2 col-md-3 offset-md-0 col-lg-5">
 														<div id="profile_name_area">
 															<div id="profile_name">
 																<h1 id="profile_title" class="text-center text-md-left">IRINA SARATOVSKAYA</h1>
-																<h4 id="profile_position" class="text-center text-md-left">Front End Developer</h4>
+																<h4 id="profile_position" class="text-center text-md-left">Frontend Developer</h4>
 															</div>
 														</div>
 													</div>
@@ -174,7 +174,12 @@ function App() {
 										<div className={`section_body profile_section_body ${profile ? '' : 'closed'}`}>
 											<div className="row">
 												<div className="col-12">
-													<div className="proile_body text-justify"> Result-oriented professional with 13 years of experience in various areas, including IT, Blockchain and Fintech projects, working in business development, sales, software development, software testing and translation & localization (English, Korean and Russian). I am a quick learner who can absorb new ideas and find effective solutions. I have a passion for programming, and I have been honing my skills in side projects under the mentoring of a senior Silicon Valley developer.</div>
+													<div className="proile_body text-justify"> 
+													<p className="profile_text">I am a result-oriented professional with 13 years of experience in various areas, including IT and Blockchain projects, working in business development, sales, software development, software testing, and translation & localization (English, Korean, and Russian).</p>
+													<p className="profile_text">I believe that being passionate about everything we do, in both our professional and private life, is a key to success. Three years ago, interested in the constantly evolving world and its trends, I moved to the IT and Blockchain industry, where I continued my career and gained knowledge about innovative technologies and various methods of their implementation.</p>
+													<p className="profile_text">My love for technologies led me to learn Frontend Development on my own and explore ways in which I could be a part of this new virtual world. I completed several courses (400+ hours) as well as practiced under the mentoring of a Senior Developer from Silicon Valley. Currently, I am working as a part-time Freelance Developer in a Nutrition startup, as well as working on my own projects.</p>
+													<p>I am open to new opportunities that could give me a chance to work on diverse, challenging projects while developing my skills.</p>
+													</div>
 												</div>
 											</div>
 										</div>
@@ -182,7 +187,7 @@ function App() {
 									<div id="mainpage_accordion_area"> 
 										<section className={`section resume_section ${resume ? 'open' : ''}`}>
 											<div className="resume_buttons">
-												<a target="_blank" className="resume_link_download" href="/images/Irina Saratovskaya (Junior Front End Developer).pdf">
+												<a target="_blank" className="resume_link_download" href="/images/Irina Saratovskaya (Frontend Developer).pdf">
 													<span className="label">Download</span>
 													<span className="icon">
 														<i class="far fa-arrow-alt-circle-down"></i>
@@ -255,7 +260,7 @@ function App() {
                                                                                     <h4 className="post_title">
                                                                                         <span className="post_title_icon green"></span> {ed.institution}
                                                                                     </h4>
-                                                                                    <h5 className="post_subtitle">{ed.subject}</h5>
+                                                                                    <h5 className="post_subtitle ed_subtitle">{ed.subject}</h5>
                                                                                 </div>
                                                                                 <div className="post_body resume_post_body">
                                                                                     <p>{ed.description}</p>
@@ -291,8 +296,8 @@ function App() {
                                                                     <div className="skills_row">
                                                                         <span className="caption">Javascript</span>
                                                                         <span className="progressbar">
-                                                                            <span className="prog green" style={{width: '80%'}}>
-                                                                                <span className="value">80%</span>
+                                                                            <span className="prog green" style={{width: '90%'}}>
+                                                                                <span className="value">90%</span>
                                                                             </span>
                                                                         </span>
                                                                     </div>
@@ -305,10 +310,18 @@ function App() {
                                                                         </span>
                                                                     </div>
                                                                     <div className="skills_row">
+                                                                        <span className="caption">SQL</span>
+                                                                        <span className="progressbar">
+                                                                            <span className="prog red" style={{width: '80%'}}>
+                                                                                <span className="value">80%</span>
+                                                                            </span>
+                                                                        </span>
+                                                                    </div>
+																	<div className="skills_row">
                                                                         <span className="caption">Node.js</span>
                                                                         <span className="progressbar">
-                                                                            <span className="prog red" style={{width: '10%'}}>
-                                                                                <span className="value">10%</span>
+                                                                            <span className="prog aqua" style={{width: '20%'}}>
+                                                                                <span className="value">20%</span>
                                                                             </span>
                                                                         </span>
                                                                     </div>

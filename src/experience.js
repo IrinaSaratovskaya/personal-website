@@ -1,21 +1,24 @@
 export const experience = [
     {
         "years": "03/2020 - current",
-        "company": "Front End Development (Freelance)",
-        "position": "",
+        "company": "Nutrition Technology startup",
+        "position": "Part-time Frontend Developer ",
         "responsibiliies": [
-            "Working on various small projects",
-            "Part-time internship at a Nutrition Technology startup",
+            "Building responsive layouts using HTML, CSS, Bootstrap, etc.",
+            "Creating forms, interactive UI components",
+            "Working with state management, Redux, code refactoring",
+            "Using REST API, CRUD, AJAX, etc.",
         ], 
         "achievements": "",
     },
     {
         "years": "09/2008 - 03/2020",
         "company": "Translation and Localization (Freelance)",
-        "position": "Five Translation/Localization Agencies In Russia",
+        "position": "Five Translation & Localization Agencies In Russia",
         "responsibiliies": [
-            "Areas of translation: IT, cryptocurrency, Blockchain, Fintech, marketing & PR, legal, accounting and finance, medicine, etc.",
+            "Translation: IT, cryptocurrency, Blockchain, Fintech, marketing & PR, legal, accounting and finance, medicine, etc.",
             "UI localization of websites, apps, online games, etc.",
+            "Localization testing",
         ], 
         "achievements": "",
     },
@@ -24,7 +27,7 @@ export const experience = [
         "company": "AVA Software (IT startup), Singapore",
         "position": "Sales & Business Development Manager",
         "responsibiliies": [
-            "Promoting and selling innovative IT products and services in Southeast Asia, Europe, and the USA.",
+            "Promoting and selling innovative IT products and services in Southeast Asia, Europe, and the USA (B2B).",
             "Market research and sales strategy development.",
             "Assisting in testing new software features.",
         ], 
@@ -58,7 +61,7 @@ export const experience = [
             "Selling catamaran private charters & group tours, transfers, spa packages, etc., and developing and maintaining relationships with tour suppliers, hotels, car rental agencies, shops, etc.",
             "Assisting in developing the company’s online booking system and website (translation & localization, testing, creating and updating content).",
         ], 
-        "achievements": "I helped to localize the products and services: booking system, website, etc., and adapt for and attract the Russian market with which the company had never worked before.",
+        "achievements": "I helped to localize the company’s products and services (booking system, website, etc.) and attracted the Russian market with which the company had never worked before.",
     },
     {
         "years": "10/2012 - 03/2014",
