@@ -2,6 +2,10 @@
 	.sidebar.contact_sidebar {
 		margin-left: 13px;
 	}
+
+	#mainpage_accordion_area .portfolio_items article.portfolio_post {
+		margin-bottom: 30px;
+	}
 }
 
 @media (max-width: 1199.98px) {
@@ -11,6 +15,10 @@
 
 	.sidebar.contact_sidebar {
 		margin-left: 15px;
+	}
+
+	#mainpage_accordion_area .portfolio_items article.portfolio_post {
+		margin-bottom: 30px;
 	}
 }
 

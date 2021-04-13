@@ -4,6 +4,8 @@ import { education } from './education'
 import '../node_modules/bootstrap/dist/css/bootstrap.css';
 import '../node_modules/@fortawesome/fontawesome-free/css/all.css';
 import './App.scss';
+import 'react-image-lightbox/style.css';
+import Portfolio from './components/Portfolio';
 
 function App() {
 
@@ -11,7 +13,7 @@ function App() {
 	const [resume, setResume] = useState(false);
 	const [portfolio, setPortfolio] = useState(false);
 	const [contacts, setContacts] = useState(false);
-	const [category, setCategory] = useState('all');
+	// const [category, setCategory] = useState('all');
 	const [name, setName] = useState('');
 	const [email, setEmail] = useState('');
 	const [message, setMessage] = useState('');
@@ -29,9 +31,9 @@ function App() {
 	const handleContactsClick = () => {
 		setContacts(!contacts);
 	}
-	const filterClickHandler = (cat) => {
-        setCategory(cat);
-    }
+	// const filterClickHandler = (cat) => {
+    //     setCategory(cat);
+    // }
 	const handleNameChange = (e) => {
         setName(e.target.value);
     }
@@ -176,8 +178,8 @@ function App() {
 												<div className="col-12">
 													<div className="proile_body text-justify"> 
 													<p className="profile_text">I am a result-oriented professional with 13 years of experience in various areas, including IT and Blockchain projects, working in business development, sales, software development, software testing, and translation & localization (English, Korean, and Russian).</p>
-													<p className="profile_text">I believe that being passionate about everything we do, in both our professional and private life, is a key to success. Three years ago, interested in the constantly evolving world and its trends, I moved to the IT and Blockchain industry, where I continued my career and gained knowledge about innovative technologies and various methods of their implementation.</p>
-													<p className="profile_text">My love for technologies led me to learn Frontend Development on my own and explore ways in which I could be a part of this new virtual world. I completed several courses (400+ hours) as well as practiced under the mentoring of a Senior Developer from Silicon Valley. Currently, I am working as a part-time Freelance Developer in a Nutrition startup, as well as working on my own projects.</p>
+													<p className="profile_text">I believe that being passionate about everything we do in our professional and private life is key to success. Four years ago, interested in the constantly evolving world and its trends, I moved to the IT and Blockchain industry, where I continued my career and gained knowledge about innovative technologies and various methods of their implementation.</p>
+													<p className="profile_text">My love for technologies led me to learn Frontend Development on my own. I completed several courses (400+ hours) as well as practiced under the mentoring of a Senior Developer from Silicon Valley. Currently, I am working as Frontend Developer in a Nutrition startup, as well as working on my own projects.</p>
 													<p>I am open to new opportunities that could give me a chance to work on diverse, challenging projects while developing my skills.</p>
 													</div>
 												</div>
@@ -280,48 +282,48 @@ function App() {
                                                                     <div className="skills_row first">
                                                                         <span className="caption">HTML</span>
                                                                         <span className="progressbar">
-                                                                            <span className="prog blue" style={{width: '90%'}}>
-                                                                                <span className="value">90%</span>
+                                                                            <span className="prog blue" style={{width: '100%'}}>
+                                                                                <span className="value"></span>
                                                                             </span>
                                                                         </span>
                                                                     </div>
                                                                     <div className="skills_row">
                                                                         <span className="caption">CSS</span>
                                                                         <span className="progressbar">
-                                                                            <span className="prog aqua" style={{width: '90%'}}>
-                                                                                <span className="value">90%</span>
+                                                                            <span className="prog aqua" style={{width: '100%'}}>
+                                                                                <span className="value"></span>
                                                                             </span>
                                                                         </span>
                                                                     </div>
                                                                     <div className="skills_row">
                                                                         <span className="caption">Javascript</span>
                                                                         <span className="progressbar">
-                                                                            <span className="prog green" style={{width: '90%'}}>
-                                                                                <span className="value">90%</span>
+                                                                            <span className="prog green" style={{width: '100%'}}>
+                                                                                <span className="value"></span>
                                                                             </span>
                                                                         </span>
                                                                     </div>
                                                                     <div className="skills_row">
                                                                         <span className="caption">React.js</span>
                                                                         <span className="progressbar">
-                                                                            <span className="prog yellow" style={{width: '85%'}}>
-                                                                                <span className="value">85%</span>
+                                                                            <span className="prog yellow" style={{width: '100%'}}>
+                                                                                <span className="value"></span>
                                                                             </span>
                                                                         </span>
                                                                     </div>
                                                                     <div className="skills_row">
                                                                         <span className="caption">SQL</span>
                                                                         <span className="progressbar">
-                                                                            <span className="prog red" style={{width: '80%'}}>
-                                                                                <span className="value">80%</span>
+                                                                            <span className="prog red" style={{width: '100%'}}>
+                                                                                <span className="value"></span>
                                                                             </span>
                                                                         </span>
                                                                     </div>
 																	<div className="skills_row">
                                                                         <span className="caption">Node.js</span>
                                                                         <span className="progressbar">
-                                                                            <span className="prog aqua" style={{width: '20%'}}>
-                                                                                <span className="value">20%</span>
+                                                                            <span className="prog aqua" style={{width: '100%'}}>
+                                                                                <span className="value"></span>
                                                                             </span>
                                                                         </span>
                                                                     </div>
@@ -428,74 +430,7 @@ function App() {
 											<div className="section_body portfolio_section_body">
 												<div className="row">
 													<div className="col">
-														<div className="portfolio_wrapper">
-															<ul id="portfolio_iso_filters">
-																<li onClick={() => filterClickHandler('all')}>
-																	<a className={category === 'all'? 'current' : ''}>All</a>
-																</li>
-																<li onClick={() => filterClickHandler('web')}>
-																	<a className={category === 'web'? 'current' : ''}>Web</a>
-																</li>
-																<li onClick={() => filterClickHandler('app')}>
-																	<a className={category === 'app'? 'current' : ''}>App</a>
-																</li>
-															</ul>
-															<div className="portfolio_items">
-																<div className="row">
-																	{(category === 'web' || category === 'all') && (
-																		<div className="col-12 col-sm-10 offset-sm-1 col-md-6 offset-md-0 col-lg-4">
-																			<article className="post portfolio_post category_5">
-																				<div className="post_pic portfolio_post_pic"> 
-																					<a className="w_hover img-link img-wrap"> 
-																						<span className="overlay"></span> 
-																						<span className="link-icon"></span> 
-																						<img src="/images_post/my_website.png" alt="Personal website" /> 
-																					</a> 
-																				</div>
-																				<h4 className="post_title">
-																					<a href="https://github.com/IrinaSaratovskaya/personal-website">Personal website</a>
-																				</h4>
-																				<h5 className="post_subtitle">Web</h5>
-																			</article>
-																		</div>
-																	)}
-																	{(category === 'app' || category === 'all') && (
-																		<div className="col-12 col-sm-10 offset-sm-1 col-md-6 offset-md-0 col-lg-4">
-																			<article className="post portfolio_post category_5">
-																				<div className="post_pic portfolio_post_pic"> 
-																					<a className="w_hover img-link img-wrap"> 
-																						<span className="overlay"></span> 
-																						<span className="link-icon"></span> 
-																						<img src="/images_post/comp_dir.png" alt="Company Directory" /> 
-																					</a> 
-																				</div>
-																				<h4 className="post_title">
-																					<a href="https://github.com/IrinaSaratovskaya/company-directory">Company Directory</a>
-																				</h4>
-																				<h5 className="post_subtitle">App</h5>
-																			</article>
-																		</div>
-																	)}
-																	{(category === 'app' || category === 'all') && (
-																		<div className="col-12 col-sm-10 offset-sm-1 col-md-6 offset-md-0 col-lg-4">
-																			<article className="post portfolio_post category_5">
-																				<div className="post_pic portfolio_post_pic"> 
-																					<a className="w_hover img-link img-wrap"> 
-																						<span className="overlay"></span> 
-																						<span className="link-icon"></span> 
-																						<img src="/images_post/to_do_list.png" alt="To Do List" /> 
-																					</a> 
-																				</div>
-																				<h4 className="post_title">
-																					<a href="https://github.com/IrinaSaratovskaya/to-do-list">To Do List</a>
-																				</h4>
-																				<h5 className="post_subtitle">App</h5>
-																			</article>
-																		</div>
-																	)}
-																</div>
-															</div>
-														</div>
+														<Portfolio />
 													</div>
 												</div>
 											</div>
